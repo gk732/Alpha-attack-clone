@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #87ceeb; /* Sky blue background */
+}
+
+/* Mute button at the top-right */
+#mute-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#mute-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Game container styles */
+.game-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu button, .game-over button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover, .game-over button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.game-area {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background: url('assets/background.jpg') no-repeat center center/cover;
+  overflow: hidden;
+  border: 2px solid #000;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Rocket (bomb) styles */
+.rocket {
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background: url('assets/bomb.png') no-repeat center center/contain;
+}
+
+.rocket::after {
+  content: attr(data-letter);  /* Display the letter from a data attribute */
+  position: absolute;
+  top: 50%;    /* Position in the middle */
+  left: 50%;   /* Center horizontally */
+  transform: translate(-50%, -50%);  /* Center the text */
+  font-size: 26px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+
+/* Explosion styles */
+.explosion {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('assets/explosion.png') no-repeat center center/contain;
+}
