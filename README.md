@@ -10,7 +10,6 @@ Alpha Attack is a web-based typing game where players aim to destroy falling roc
 - [Game Mechanics](#game-mechanics)
 - [Difficulty Levels](#difficulty-levels)
 - [Audio Settings](#audio-settings)
-- [License](#license)
 
 ## Features
 - **Interactive Gameplay:** Players type the displayed letter on falling rockets to destroy them and score points.
@@ -63,9 +62,6 @@ As the score increases, the level changes:
 ## Audio Settings
 - **Sound Effects:** Background music and sound effects for rocket destruction and life loss are included.
 - **Mute/Unmute:** Use the "Mute/Unmute Music" button at the top-right corner to toggle background music on or off.
-
-## License
-This project is licensed under the MIT License.
 
 ---
 
