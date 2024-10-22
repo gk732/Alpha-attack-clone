@@ -26,7 +26,7 @@ Alpha Attack is a web-based typing game where players aim to destroy falling roc
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/alpha-attack-game.git
+   git clone https://github.com/gk732/alpha-attack-game.git
    ```
 2. **Navigate to the project directory:**
    ```bash
