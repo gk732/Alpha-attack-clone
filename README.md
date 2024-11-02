@@ -64,5 +64,3 @@ As the score increases, the level changes:
 - **Mute/Unmute:** Use the "Mute/Unmute Music" button at the top-right corner to toggle background music on or off.
 
 ---
-
-You can modify the installation instructions to include a link to the actual repository and further customize the details based on your preferences. Let me know if you need more details or additional sections!
